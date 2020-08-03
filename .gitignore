@@ -8,6 +8,7 @@ yarn-error.log*
 # Build directory
 .cache
 dist/
+.out
 
 # Dependency directories
 node_modules
