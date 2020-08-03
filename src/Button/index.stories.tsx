@@ -1,4 +1,6 @@
 import React from 'react'
+import { text } from '@storybook/addon-knobs'
+
 import { Button } from '.'
 
 export default {
@@ -8,6 +10,6 @@ export default {
 
 export const all = () => (
   <Button buttonType="primary">
-    Cool Button <span aria-label="cool emoji" role="img">😎</span>
+    {text('Button Copy', 'Cool Button 😎')}
   </Button>
 )
