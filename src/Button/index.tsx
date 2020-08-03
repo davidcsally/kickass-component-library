@@ -13,7 +13,6 @@ export interface ButtonProps {
 }
 
 const StyledButton = styled.button<{ buttonType: ButtonType }>`
-
   border: 2px solid black;
   background-color: transparent;
   padding: 1rem;
