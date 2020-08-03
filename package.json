@@ -44,5 +44,8 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "semantic-release": "^17.1.1"
   }
 }
