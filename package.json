@@ -13,6 +13,8 @@
     "@babel/core": "^7.11.0",
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-angular": "^9.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-docs": "^6.0.0-rc.23",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.0-rc.23",
@@ -31,6 +33,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
+    "semantic-release": "^17.1.1",
     "storybook": "^6.0.0-rc.23",
     "styled-components": "^5.1.1",
     "ts-loader": "^8.0.2",
@@ -45,7 +48,24 @@
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix"
   },
-  "dependencies": {
-    "semantic-release": "^17.1.1"
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "docs(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/release-notes-generator"
+    ]
   }
 }
