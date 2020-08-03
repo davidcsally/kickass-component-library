@@ -4,11 +4,20 @@
   "description": "A boilerplate guide to building a world class component library",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "storybook": "start-storybook"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.13",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^8.0.2",
     "typescript": "^3.9.7"
   }
 }
