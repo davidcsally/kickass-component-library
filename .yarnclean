@@ -1,0 +1,4 @@
+# This is a temporary fix for an issue with @types/styled-components.
+# See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33015
+# for more information.
+@types/react-native
