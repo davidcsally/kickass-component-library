@@ -1,0 +1,15 @@
+{
+  // This is the only way to dynamically ignore our test and story files
+  // at build time.
+  "extends": "./tsconfig.json",
+  "exclude": [
+    // defaults
+    "node_modules",
+    "bower_components",
+    "jspm_packages",
+    "<outDir>",
+    // additions
+    "**/*.test.*",
+    "**/*.stories.*"
+  ]
+}

@@ -1,16 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
+type ButtonType = 'primary' | 'secondary' | 'tertiary'
+
 export interface ButtonProps {
   /** Button Copy / Text */
   children: React.ReactNode;
   /** Specifies preset button style */
-  buttonType: 'primary' | 'secondary' | 'tertiary',
+  buttonType: ButtonType,
   /** (optional) Specifies button type (button, submit, or reset). Defaults to `button` */
   type?: 'button' | 'submit' | 'reset';
 }
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<{ buttonType: ButtonType }>`
+
   border: 2px solid black;
   background-color: transparent;
   padding: 1rem;

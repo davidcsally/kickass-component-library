@@ -5,6 +5,10 @@
 yarn-debug.log*
 yarn-error.log*
 
+# Build directory
+.cache
+dist/
+
 # Dependency directories
 node_modules
 
