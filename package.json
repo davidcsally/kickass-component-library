@@ -1,0 +1,11 @@
+{
+  "name": "kickass-component-library",
+  "version": "0.1.0",
+  "description": "A boilerplate guide to building a world class component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
