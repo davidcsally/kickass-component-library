@@ -1,14 +1,13 @@
 import React from 'react'
-import { Button } from '@storybook/react/demo'
+import { Button } from '.'
 
-export default { title: 'Button' }
+export default {
+  component: Button,
+  title: 'Button',
+}
 
-export const withText = () => <Button>Hello Button</Button>
-
-export const withEmoji = () => (
-  <Button>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
+export const all = () => (
+  <Button buttonType="primary">
+    Cool Button <span aria-label="cool emoji" role="img">😎</span>
   </Button>
 )
