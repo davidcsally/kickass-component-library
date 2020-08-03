@@ -12,6 +12,9 @@
     "storybook:build": "build-storybook -c .storybook -o .out",
     "test": "test"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "David Sally <davidcsally@gmail.com>",
   "license": "MIT",
   "devDependencies": {
