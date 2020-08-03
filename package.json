@@ -9,6 +9,7 @@
     "build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
     "clean": "rm -rf dist/",
     "storybook": "start-storybook",
+    "storybook:build": "build-storybook -s ./storybook-out",
     "test": "test"
   },
   "author": "David Sally <davidcsally@gmail.com>",
