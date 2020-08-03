@@ -1,8 +1,7 @@
 # Kickass Component Library
 
-<a target="_blank" rel="noopener" href="https://kickass-component-library-git-main.davidcsally.vercel.app/">
-  <img src="https://github.com/storybookjs/brand/blob/master/badge/badge-storybook.svg">
-</a>
+[![Storybook](https://github.com/storybookjs/brand/blob/master/badge/badge-storybook.svg)](https://kickass-component-library-git-main.davidcsally.vercel.app/)
+![Publish](https://github.com/davidcsally/kickass-component-library/workflows/Publish/badge.svg)
 
 ## Boilerplate for building amazing component libraries
 
