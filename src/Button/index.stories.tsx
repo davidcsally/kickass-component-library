@@ -5,7 +5,7 @@ import { Button } from '.'
 
 export default {
   component: Button,
-  title: 'Button',
+  title: 'Components/Button',
 }
 
 export const all = () => (
