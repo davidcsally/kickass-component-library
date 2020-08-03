@@ -7,10 +7,12 @@
     "test": "test",
     "storybook": "start-storybook"
   },
-  "author": "",
+  "author": "David Sally <davidcsally@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.11.0",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-angular": "^9.1.1",
     "@storybook/addon-docs": "^6.0.0-rc.23",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.0-rc.23",
@@ -36,7 +38,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
