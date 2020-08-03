@@ -2,6 +2,7 @@
 
 [![Storybook](https://github.com/storybookjs/brand/blob/master/badge/badge-storybook.svg)](https://kickass-component-library-git-main.davidcsally.vercel.app/)
 ![Publish](https://github.com/davidcsally/kickass-component-library/workflows/Publish/badge.svg)
+![npm](https://img.shields.io/npm/v/kickass-component-library)
 
 ## Boilerplate for building amazing component libraries
 
