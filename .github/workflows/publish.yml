@@ -21,5 +21,5 @@ jobs:
           GH_TOKEN: secrets.GITHUB_TOKEN
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
           npx semantic-release
