@@ -18,9 +18,6 @@ jobs:
 
       - name: Release  🚀
         env:
-          GH_TOKEN: secrets.GH_TOKEN
-          GITHUB_TOKEN: secrets.GH_TOKEN
-          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" >> .npmrc
-          npx semantic-release
+          GH_TOKEN: secrets.GITHUB_TOKEN
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
