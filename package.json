@@ -1,5 +1,5 @@
 {
-  "name": "kickass-component-library",
+  "name": "@davidcsally/kickass-component-library",
   "version": "1.0.0",
   "description": "A boilerplate guide to building a world class component library",
   "main": "index.js",
@@ -10,8 +10,7 @@
     "clean": "rm -rf dist/",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook -o .out",
-    "test": "test",
-    "semantic-release": "semantic-release"
+    "test": "test"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
