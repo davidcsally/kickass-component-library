@@ -10,7 +10,8 @@
     "clean": "rm -rf dist/",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook -o .out",
-    "test": "test"
+    "test": "test",
+    "semantic-release": "semantic-release"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
