@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    ".eslintrc.js",
+    ".storybook/**/*.js",
+    "commitlint.config.js",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}
