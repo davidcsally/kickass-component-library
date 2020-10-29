@@ -36,6 +36,8 @@
     "@babel/preset-typescript": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-actions": "^6.0.27",
     "@storybook/addon-essentials": "^6.0.27",
     "@storybook/addon-links": "^6.0.27",
@@ -54,6 +56,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.5.0",
     "react-is": "^17.0.1",
+    "semantic-release": "^17.2.1",
     "typescript": "^3.9.7"
   },
   "husky": {
@@ -64,5 +67,27 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "docs(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/release-notes-generator"
+    ]
   }
 }
