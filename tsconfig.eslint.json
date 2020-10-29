@@ -3,6 +3,7 @@
   "include": [
     ".eslintrc.js",
     ".storybook/**/*.js",
+    "babel.config.js",
     "commitlint.config.js",
     "src/**/*.ts",
     "src/**/*.tsx"
